@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.FXML2Controller">
+   <children>
+      <Pane layoutY="1.0" prefHeight="800.0" prefWidth="1250.0">
+         <children>
+            <ImageView fx:id="imageview" fitHeight="800.0" fitWidth="1500.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/exam.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="r" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="800.0" layoutX="847.0" stroke="WHITE" strokeType="INSIDE" width="400.0" />
+            <Label fx:id="RegNo" layoutX="901.0" layoutY="340.0" text="Reg No">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="PinCode" layoutX="900.0" layoutY="410.0" text="Pincode">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pass" layoutX="978.0" layoutY="410.0" prefHeight="25.0" prefWidth="187.0" />
+            <TextField fx:id="text" layoutX="978.0" layoutY="340.0" prefHeight="25.0" prefWidth="187.0" />
+            <ImageView fx:id="view" fitHeight="98.0" fitWidth="91.0" layoutX="900.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/quizicon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="student" layoutX="995.0" layoutY="216.0" text="Student Quiz" textFill="#720b6f">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="login" layoutX="1157.0" layoutY="518.0" mnemonicParsing="false" onAction="#handleButtonAction" text="login">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="forget" layoutX="906.0" layoutY="440.0" prefHeight="21.0" prefWidth="331.0" textFill="#f51313" />
+            <Label layoutX="914.0" layoutY="487.0" text="id" />
+            <TextField fx:id="id" layoutX="978.0" layoutY="478.0" prefHeight="29.0" prefWidth="187.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

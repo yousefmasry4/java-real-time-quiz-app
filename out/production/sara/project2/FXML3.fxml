@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.FXML3Controller">
+   <children>
+      <VBox layoutX="14.0" layoutY="25.0" prefHeight="470.0" prefWidth="508.0">
+         <children>
+            <Label fx:id="hello" text="Hello,">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="enter" prefHeight="63.0" prefWidth="458.0" text="enter your Quiz now">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="start" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="175.0" prefWidth="498.0" text="New Quiz">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="152.0" prefWidth="504.0" text="log out">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="name" layoutX="320.0" layoutY="117.0" onDragDetected="#handleButtonAction" prefHeight="59.0" prefWidth="108.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

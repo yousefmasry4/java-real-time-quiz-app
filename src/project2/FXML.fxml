@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.FXMLController">
+   <children>
+      <ImageView fx:id="imageview" fitWidth="1314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/lecturer.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="r" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="514.0" layoutX="454.0" layoutY="163.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
+      <Button fx:id="login" layoutX="600.0" layoutY="558.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="84.0" text="login">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" layoutX="569.0" layoutY="417.0" prefHeight="31.0" prefWidth="175.0" />
+      <TextField fx:id="text" layoutX="569.0" layoutY="337.0" prefHeight="31.0" prefWidth="175.0" />
+      <Label fx:id="forget" layoutX="665.0" layoutY="489.0" text="forget password?">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrong" layoutX="579.0" layoutY="455.0" prefHeight="17.0" prefWidth="221.0" />
+      <Label fx:id="lecturer" layoutX="559.0" layoutY="214.0" text="Lecturer Quiz">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="ID" layoutX="527.0" layoutY="344.0" text="ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="pass" layoutX="477.0" layoutY="419.0" text="password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="view" fitHeight="147.0" fitWidth="133.0" layoutX="457.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/quiz.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

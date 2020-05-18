@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.FXMLDocumentController">
+   <children>
+      <Rectangle fx:id="r" arcHeight="5.0" arcWidth="5.0" height="800.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="1250.0">
+         <fill>
+            <LinearGradient endX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#bc698d" />
+                  <Stop color="#5ce4d9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="imageview" disable="true" fitHeight="264.0" fitWidth="260.0" layoutX="213.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/quiz.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="student" blendMode="MULTIPLY" layoutX="479.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="147.0" text="Student">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="lecturer" blendMode="MULTIPLY" layoutX="476.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="147.0" text="lecturer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="l1" layoutX="424.0" layoutY="94.0" prefHeight="110.0" prefWidth="354.0" text="Quiz Online" textFill="#f5f5f5">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="552.0" layoutY="194.0" prefHeight="27.0" prefWidth="321.0" text="CREATE EXAMS, COLLECT RESPONSES">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+        public VBox me(){
+            VBox v=new VBox();
+            Label sid = new Label(student_id);
+            Label q = new Label(question);
+            Label ans = new Label(answer);
+            HBox hh= new HBox();
+            Button t=new Button("true");
+            Button f=new Button("false");
+            t.setOnAction((e)->{
+                DataOutputStream output= null;
+                try {
+                    output = new DataOutputStream(socket.getOutputStream());
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+
+                try {
+                    output.writeUTF(student_id+"~"+"t");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+                try {
+                    output.flush();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            });
+            f.setOnAction((e)->{
+                DataOutputStream output= null;
+                try {
+                    output = new DataOutputStream(socket.getOutputStream());
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+
+                try {
+                        output.writeUTF(student_id+"~"+"f");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+                try {
+                    output.flush();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            });
+
+            hh.getChildren().addAll(t,f);
+            v.getChildren().addAll(sid,q,  ans,hh );
+            return v;
+        }
